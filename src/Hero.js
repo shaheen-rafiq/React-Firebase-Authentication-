@@ -1,7 +1,7 @@
 import React from "react";
 
 const Hero = (props) =>{
-    const {handleLogout,user}=props
+    const {handleLogout,email}=props;
     return(
         <section className="hero">
             <nav>
@@ -9,8 +9,7 @@ const Hero = (props) =>{
                 <button onClick={handleLogout}>Log Out</button>
             </nav>
             <p>
-                <h6>Your user is </h6>
-                <h6>{user}</h6>
+                <h3 className="bodytext">Your email ID is: {email}</h3>
             </p>
         </section> 
     )
